@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pms.fizar.myiotprojectfizar.ControlActivity">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:text="LED 1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLed2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tbLed2"
+        android:layout_alignStart="@+id/switch1"
+        android:text="LED 2"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/tbLed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/switch1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="156dp"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/tvLed3Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvLed2Label"
+        android:layout_centerVertical="true"
+        android:text="LED 3"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/switch1"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ON" />
+
+        <RadioButton
+            android:id="@+id/radioOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OFF" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="166dp"
+        android:text="TextView"
+        tools:text="Push Button Status" />
+
+    <TextView
+        android:id="@+id/tvSwitchStatus"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp"
+        android:text="LOW"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -52,9 +52,6 @@ public class ControlActivity extends AppCompatActivity {
         getCurrentToken();
         //subscribeToTopic();  no longer used
 
-        PushNotifications.start(getApplicationContext(), "44cc4074-42d6-4dac-a7ea-f1943df588d1");
-        PushNotifications.addDeviceInterest("hello");
-
 
         //Retrieves Push button state from Firebase continously
         switchStatus.addValueEventListener(new ValueEventListener() {

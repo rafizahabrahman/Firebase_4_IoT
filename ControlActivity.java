@@ -11,7 +11,6 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-import com.pusher.pushnotifications.PushNotifications;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -49,8 +48,8 @@ public class ControlActivity extends AppCompatActivity {
         tvSwitchStatus = findViewById(R.id.tvSwitchStatus);
         rg = findViewById(R.id.radioGroup1);
 
-        getCurrentToken();
-        //subscribeToTopic();  no longer used
+        //getCurrentToken();
+        subscribeToTopic();  
 
 
         //Retrieves Push button state from Firebase continously
@@ -172,7 +171,7 @@ public class ControlActivity extends AppCompatActivity {
         });
     }
 
-   /* private void subscribeToTopic() {
+    private void subscribeToTopic() {
         FirebaseMessaging.getInstance().subscribeToTopic("SampleTopic")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
@@ -183,9 +182,9 @@ public class ControlActivity extends AppCompatActivity {
                         }
                     }
                 });
-    }*/
+    }
 
-    private void getCurrentToken() {
+   /* private void getCurrentToken() {
 
         FirebaseInstanceId.getInstance().getInstanceId()
                 .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
@@ -204,5 +203,5 @@ public class ControlActivity extends AppCompatActivity {
                         Log.d("Current Token " + ">>>>>>>>>", msg);
                     }
                 });
-    }
+    }*/
 }

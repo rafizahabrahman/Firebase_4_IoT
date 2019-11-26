@@ -68,7 +68,7 @@ void sendDataToFirebase() {  //new changes
 
   WiFiClientSecure client;
   String data = "{";
-  data = data + "\"to\": \"" + reg + "\",";
+  data = data + "\"to\": \"/topics/SampleTopic" "\",";
   data = data + "\"notification\": {";
   data = data + "\"body\": \"Some pressed your doorbell.\",";
   data = data + "\"title\" : \"Info\" ";
@@ -150,6 +150,3 @@ void loop() {
         }
       }
 }
-
-
-

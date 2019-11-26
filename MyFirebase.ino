@@ -29,7 +29,6 @@
 #define WIFI_PASSWORD "your_password"
 
 String serve = "<server_key_here>"; //new changes
-String reg = "<device_token_here>"; //new changes
 
 //Global declaration and initialization of variables
 const int LED1 = 4;     //D2 GPIO4 

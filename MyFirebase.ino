@@ -28,7 +28,7 @@
 #define WIFI_SSID "your_ssid"
 #define WIFI_PASSWORD "your_password"
 
-String serve = "<server_key_here>"; //new changes
+String serve = "<server_key_here>"; //new changes, don't include the symbol <xx>
 
 //Global declaration and initialization of variables
 const int LED1 = 4;     //D2 GPIO4 
